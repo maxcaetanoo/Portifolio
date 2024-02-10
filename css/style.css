@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=RocknRoll+One&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    /*Colors*/
+    --cor0: #2EDBC8;
+    --cor1: #32615C;
+    --cor2: #E051CB;
+    --cor3: #8A2A48;
+    --cor4: #DB7A30;
+    --cor5: #D1CE1B;
+    --cor6: #101d1b;
+
+    /*Translucent Colors*/
+    --cor0t: #2edbc780;
+    --cor1t: #32615C80;
+    --cor2t: #E051CB80;
+    --cor3t: #8A2A4880;
+    --cor4t: #DB7A3080;
+    --cor5t: #D1CE1B80;
+    --cor6t: #101d1b80;
+
+    /*Fonts*/
+    --title: "RocknRoll One", sans-serif;
+    --principal: "Ubuntu Mono", monospace;
+    --destaque: "Bebas Neue", sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor6);
+}
+
+header {
+    margin: 0px 0px 15px 15px;
+    padding: 0px 50px;
+    display: flex;
+    background: linear-gradient(42deg, var(--cor6)2%, var(--cor0)65%, var(--cor1) 100%);
+    color: var(--cor6);
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+}
+
+header:hover {
+    background: linear-gradient(42deg, var(--cor6)-2%, var(--cor0)60%, var(--cor1) 100%);
+}
+
+div#title {
+    display: flex;
+    align-items: center;
+    min-width: 400px;
+}
+
+div#sub-title {
+    display: flex;
+    align-items: flex-start;
+    max-width: 350px;
+}
+
+header h1 {
+    font: bold 40px var(--title);
+    margin: 0px 10px 20px;
+    color: var(--cor0);
+}
+
+header p {
+    font: 600 18px var(--principal);
+    margin: 25px 0px -15px;
+}
+
+main {
+    background-color: white;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 0px 20px;
+    border-radius: 10px 0px;
+    box-shadow: 3px 3px 1px #2b293ae5;
+}
+
+main h1, h2 {
+    font: 500 45px var(--destaque);
+    margin: 20px 0px 30px;
+    background: linear-gradient(124deg, var(--cor3) 28%, var(--cor2) 42%, transparent 100%);
+    color: rgb(255, 255, 255);
+    text-indent: 10px;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px 0px;
+    text-shadow: 1px 1px 2px #000000a4;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.486);
+}
+
+main p {
+    font: 400 25px var(--principal);
+    margin: 0px 15px 25px;
+    text-indent: 30px;
+    padding: 0px 20px 20px;
+    line-height: 30px;
+}
+
+aside {
+    list-style: inside;
+    background-color: white;
+    padding: 20px;
+    height: 150px;
+    transition-duration: 3s;
+}
+
+aside:hover {
+    background: linear-gradient(42deg, var(--cor6t)2%, var(--cor0t)65%, var(--cor1t) 100%);
+    box-shadow: 53px 53px 15px #0000008e;
+    transition-duration: 2s;
+    border-radius: 35px;
+    text-shadow: 53px 53px 10px #0000008e;
+}
+
+img {
+    min-width: 30px;
+}
+
+aside ul {
+    margin: 25px 25px;
+    list-style: none;
+    line-height: 50px;
+}
+
+aside a {
+    font: 600 25px var(--principal);
+    text-decoration: none;
+    color: black;
+}
+
+aside a:hover {
+    color: white;
+    font-size: 35px;
+}
