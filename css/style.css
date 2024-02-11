@@ -78,7 +78,7 @@ header p {
 main {
     background-color: white;
     max-width: 1200px;
-    margin: auto;
+    margin: 0px auto;
     padding: 0px 0px 20px;
     border-radius: 10px 0px;
     box-shadow: 3px 3px 1px #2b293ae5;
@@ -107,15 +107,15 @@ main p {
 aside {
     list-style: inside;
     background-color: white;
-    padding: 20px;
+    padding: 20px 20px 80px;
     height: 150px;
-    transition-duration: 3s;
+    transition-duration: 1s;
 }
 
 aside:hover {
     background: linear-gradient(42deg, var(--cor6t)2%, var(--cor0t)65%, var(--cor1t) 100%);
     box-shadow: 53px 53px 15px #0000008e;
-    transition-duration: 2s;
+    transition-duration: 1s;
     border-radius: 35px;
     text-shadow: 53px 53px 10px #0000008e;
 }
@@ -139,4 +139,5 @@ aside a {
 aside a:hover {
     color: white;
     font-size: 35px;
+    transition-duration: .5s;
 }
