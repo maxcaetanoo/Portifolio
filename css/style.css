@@ -114,10 +114,10 @@ aside {
 
 aside:hover {
     background: linear-gradient(42deg, var(--cor6t)2%, var(--cor0t)65%, var(--cor1t) 100%);
-    box-shadow: 53px 53px 15px #0000008e;
+    box-shadow: -53px -53px 15px #0000008e;
     transition-duration: 1s;
     border-radius: 35px;
-    text-shadow: 53px 53px 10px #0000008e;
+    text-shadow: -53px -53px 10px #0000008e;
 }
 
 img {
@@ -138,6 +138,10 @@ aside a {
 
 aside a:hover {
     color: white;
+    border: 5px solid white;
+    border-radius: 10px;
+    padding: 5px;
     font-size: 35px;
+    box-shadow: -53px -53px 15px #0000008e;
     transition-duration: .5s;
 }
